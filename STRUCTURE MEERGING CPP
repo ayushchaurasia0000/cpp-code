@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+struct book {
+    private:
+    int a;
+    string book;
+    float price;
+    public:
+    void name(void)
+    {
+        std::cout << "you will find the all detail\n";
+        std::cin>>a>>book>>price;
+    }
+    void print(void)
+    {
+          if(a<0)
+          a = -a;
+  
+        std::cout << "you will find the printting values\n";
+        std::cout << a<<endl<<book<<price;
+    }
+
+};
+void name (void);
+void print(void);
+int main()
+{
+    book id;
+   // id.a = 4;
+    //std::cout <<"in the starting\n"<< id.a<<endl;
+    id.name();
+    id.print();
+}
