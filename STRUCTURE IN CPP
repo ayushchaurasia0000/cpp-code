@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+struct book
+{
+    int a;
+    int b;
+
+};
+
+
+book chaurasia(void)
+{
+    book b;
+    std::cin>>b.a>>b.b;
+    return b;
+}
+int main()
+{
+    book ayush;
+    ayush = chaurasia();
+    std::cout << "you will get the answer"<<ayush.a<<ayush.b;
+}
+
+  
