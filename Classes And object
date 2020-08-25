@@ -1,0 +1,34 @@
+#include<iostream>
+#include<algorithm>
+#include<string>
+
+using namespace std;
+
+class w
+{
+    private:
+    int a,b;
+    public:
+    void l(int , int );
+
+    void print (void)
+    {
+        std::cout <<a<<endl<<b;
+    }
+};
+
+void w:: l(int x, int y)
+{
+    a = x ;
+    b = y;
+}
+
+/*void l (int , int);
+void print (void);
+*/
+int main()
+{
+    w id;
+    id.l(4,2);
+    id.print();
+}
