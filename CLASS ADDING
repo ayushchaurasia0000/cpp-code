@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+class ayush 
+{
+int a,b;
+public:
+void get(int x, int y)
+    {
+a=x;
+b=y;
+    }
+ayush add(ayush c)
+    {
+ayush temp;
+temp.a = a + c.a;
+temp.b= b + c.b;
+return temp;
+    }
+
+void print (void)
+    {
+    std::cout <<a<<endl<<b;
+    }
+};
+int main()
+{
+ayush q,w,e;
+q.get(2,3);
+w.get(1,2);
+e = q.add(w);
+e.print();
+return 0;
+}
