@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class ayush
+{
+    string s;
+    string d;
+    int f;
+    public:
+    ayush( string q, string w)
+    {
+        s = q;
+        d = w;
+        std::cout <<s <<endl<<d;
+    }
+
+    ayush (int q)
+    
+    {
+    f = q;
+    std::cout <<f;
+    }
+
+    ayush (int e, int r, int t)
+    {
+        std::cout <<endl<<"this is the value of the last "<<endl<<e<<r<<t;
+    }
+
+    /*void print (void)
+    {
+        std::cout <<endl<<"in print"<<s<<endl<<d<<endl<<f;
+    }
+    p*/
+};
+int main()
+{
+    ayush a = { "start from here", "4"} , b = 3, c = { 1,2,3};
+    //b.print();
+    return 0;
+}
