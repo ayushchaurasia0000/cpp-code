@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    static float a;
+
+    public:
+   static void print(float c)
+    {
+    a = c;
+        std::cout <<a;
+    }
+};
+int ayush:: a = 4.5f;
+int main()
+{
+    ayush a;
+    ayush::print(3.4f);// without using objjeect you can enter the value//    CLASS ::FUNCTION_NAME(VALUE)
+}
