@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+
+class good
+{
+static float f;
+public:
+static void print(void)
+{
+std::cout <<f;
+}
+};
+float good::f = 2.21f;// dont use f if it is int
+
+int main()
+{
+  good a;
+  a.print();
+  return 0;
+  
+}
