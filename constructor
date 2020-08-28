@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush{
+    public:
+        ayush ()
+        {
+            std::cout << "the constructor is working";
+        }
+};
+int main()
+{
+    ayush a;
+   // bina a. k call ho gaya ayush ayush same hai
+    return 0;
+}
