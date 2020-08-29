@@ -1,0 +1,37 @@
+#include<iostream>
+
+using namespace std;
+
+class papa
+{
+    int a,b;
+
+    public:
+    void get(void)
+   {
+        std::cin>>a>>b;
+   }
+    papa operator+( papa c)
+    {
+        papa temp;
+        temp.a = a + c.a;
+        temp.b = b + c.b;
+        return temp;
+    }
+    void print (void)
+    {
+        std::cout <<a<<endl<<b;
+    }
+};
+
+
+int main()
+{
+    papa a,b,c;
+    a.get();
+    b.get();
+    c = a+b;
+    c.print();
+    /*a.print();
+    b.print();*/
+}
