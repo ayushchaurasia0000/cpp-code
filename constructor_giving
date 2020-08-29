@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    int q;
+    int w;
+    public:
+
+
+    ayush ( int t, int u)
+    {
+        q = t;
+        w = u;
+    }
+    ayush ( ayush &c)
+    {
+        q = c.q;
+        w = c.w;
+        std::cout <<q<<w;
+    }
+};
+
+int main()
+{
+    ayush a(2,1);
+    ayush b(a);
+    return 0;
+}
