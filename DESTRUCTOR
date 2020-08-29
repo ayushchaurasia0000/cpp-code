@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    //public:
+   // static int count;
+    public:
+    ayush()
+    {
+       // count++;
+        std::cout <<"th value of constructor "<<endl; 
+    };
+
+    ~ayush()
+    {
+      //  count--;
+        std::cout << "the value of destructor "<<endl;
+    }
+};
+
+int main()
+{
+    ayush a;
+    ayush b;
+    return 0;   //yaha destructor call hoga last main end hone se phela
+}
