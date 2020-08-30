@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+class dear
+{
+    public:
+    int x = 5, y = 9, z = 1;
+    dear operator-()
+    {
+            dear temp;
+            temp.x = -x;
+            temp.y = -y;
+            temp.z = -z;
+
+            return temp;
+    }
+     
+};
+
+int main()
+{
+    dear a,b;
+    b= -a;
+    std::cout <<b.x<<endl<<b.y<<endl<<b.z;
+    
+}
