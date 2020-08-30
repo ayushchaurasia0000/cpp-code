@@ -14,7 +14,7 @@ class papa
     papa operator+( papa c)
     {
         papa temp;
-        temp.a = a + c.a;
+        temp.a = a + c.a;                // OUTPUT  ADD MAIN AAYEGA KYUKI YAHA PR PLUS HAI (A+ C.A) YAHA AGAR MULTIPLY HOTA TOH MULTIPLY HOTA KYUKI YAHA SE DECIDE HOTA HAI 
         temp.b = b + c.b;
         return temp;
     }
