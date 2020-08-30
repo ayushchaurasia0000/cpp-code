@@ -1,0 +1,37 @@
+#include<iostream>
+
+using namespace std;
+
+class maa
+{
+    int x,y;
+    public:
+    void get( int q, int w)
+    {
+        x = q;
+        y = w;
+    }
+
+  maa operator*(maa c)
+  {
+      maa temp;
+      temp.x = x + c.x;    // KYUKI YAHA PR ADD HAI PART 2
+      temp.y = y + c.y;
+      return temp;
+  }  
+  void print (void)
+  {
+      std::cout <<endl<<x<<endl<<y;
+  }
+
+};
+
+int main()
+{
+    maa a,b,c;
+    a.get(3,5);
+    b.get(7,8);
+    c =a*b;    // OUTPUT ADD HE AAYEGA PART 1
+    c.print();
+    return 0;
+}
