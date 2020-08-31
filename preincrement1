@@ -1,0 +1,37 @@
+#include<iostream>
+
+using namespace std;
+
+class pre
+{
+	int x;
+	public:
+
+	void get( int y)
+	{
+		x=y;
+
+	}
+	pre operator++( )
+	{
+		pre temp;
+		temp.x = ++x;
+		return temp;
+	}
+	void print ( void)
+	{
+		std::cout <<x<<endl;
+	}
+};
+
+int main()
+{
+	pre a,b;
+	a.get(3);
+	//a.print();
+	b = ++a;// b = a.operator++();
+	//a.print();
+	b.print();
+
+	return 0;
+}
