@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    int x = 1, y = 3;
+    friend void print(ayush);
+    
+};
+void print(ayush c)
+{
+    std::cout <<c.x<<endl<<c.y;
+}
+
+int main()
+{
+    ayush a,b,c;
+    print(c);
+    return 0;
+}
