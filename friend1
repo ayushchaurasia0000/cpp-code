@@ -1,0 +1,46 @@
+#include<iostream>
+
+using namespace std;
+class papa;
+class ayush
+{
+    public:
+    int x,q;
+    
+    void get(int y, int u)
+    {
+        x = y;
+        q = u;
+    }
+
+    friend void print(ayush,papa);
+};
+
+class papa
+{
+    public:
+    int q,w;
+    
+    void get( int y, int u)
+    {
+        q=y;
+        w=u;
+    }
+
+friend void print( int m, int n);
+
+};
+
+void print( ayush a, papa b)
+{
+    std::cout <<a.x<<endl<<a.q<<endl<<b.q<<endl<<b.w;
+}
+
+int main()
+{
+    ayush a;
+    papa b;
+    a.get(7,8);
+    b.get(1,2);
+    print(a,b);
+}
