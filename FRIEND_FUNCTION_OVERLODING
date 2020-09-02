@@ -1,0 +1,42 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    int x,y;
+    public:
+    void get( int q, int w)
+    {
+        x=q;
+        y=w;
+    }
+
+    friend ayush operator+(ayush,ayush );
+    
+
+    void print(void)
+    {
+    std::cout <<x<<endl<<y;
+    }
+};
+ayush operator+(ayush c, ayush r)
+{
+{
+        ayush temp;
+        temp.x = c.x + r.x;
+        temp.y= c.y + r.y;
+        return temp;
+    }
+}
+
+
+int main()
+{
+    ayush a,b,c;
+    a.get(2,3);
+    b.get(7,8);
+    c = a+b;
+    c.print();
+
+}
