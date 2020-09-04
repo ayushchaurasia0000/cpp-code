@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+class maa
+{
+    public:
+    int x;
+    void print()
+    {
+        std::cout <<x<<endl;
+    }
+};
+
+class papa:public maa
+{
+public:
+int u;
+void show()
+{
+    std::cout <<u<<endl;
+}
+    
+};
+
+int main()
+{
+    class maa a;
+    class papa b;
+
+}
