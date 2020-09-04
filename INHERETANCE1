@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+    public:
+    int q;
+    void show(int e)
+    {
+        q=e;
+        std::cout <<q<<endl;
+    }
+};
+
+class papa:public ayush
+{
+    public:
+    void print( int t)
+    {
+         show(t);
+    }
+};
+
+int main()
+{
+    class ayush a;
+    class papa b;
+    b.print(5);
+    a.show(1);
+    
+}
