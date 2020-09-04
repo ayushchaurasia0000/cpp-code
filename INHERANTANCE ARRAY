@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+	int a[6];
+public:
+	void get( int i, int y)
+	{
+		a[i]= y;
+		std::cout << a[i]<<endl<<y;
+	}
+};
+
+class maa:private ayush
+{
+	int q=3;
+	//std::cout<<"enter the storage value in the function"<<q<<endl;
+	//std::cin>>q;
+public:
+	void quit(int w)
+	{
+		get(q,w);
+	}
+};
+
+int main()
+{
+	ayush a;
+	maa b;
+	b.quit(8);
+
+
+}
