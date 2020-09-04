@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+	int x;
+public:
+	ayush( int y)
+	{
+		x=y;
+		std::cout << "the value of x is  "<<x<<endl;
+	}
+};
+
+class papa: public ayush
+{
+	int q;
+public:
+papa ( int w, int u):ayush(w)
+	  {
+	q=u;
+	std::cout <<q;
+	}
+};
+
+int main()
+{
+	//ayush a;
+	papa b(8,1);
+
+}
