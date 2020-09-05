@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+public:
+	void print(void)
+	{
+		std::cout <<"this is in the ayush print in parent\n";
+	}
+
+	void get( void)
+	{
+		std::cout << " this is the value of the get \n";
+	}
+};
+
+class maa:public ayush
+{
+	/*void print(void)
+	{
+		std::cout << "this is the print in the child \n";
+	}*/
+};
+
+int main()
+{
+	class ayush *p,a;
+	class maa m;
+
+	p=&m;
+	p=&a;
+	p->print();//this means m.print(); or yeh sirf pointer mai he kaam aata hai
+}
