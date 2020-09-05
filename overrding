@@ -1,0 +1,37 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+public:
+	void get( void)
+	{
+		std::cout << "this is get in parent \n";
+	}
+
+
+	void print()
+	{
+		std::cout << " this is print in parent \n";
+	}
+};
+
+class maa:public ayush
+{
+	/*void get()
+	{
+		std::cout<<"this is the get in the child\n";
+	}*/
+
+	void print(int y)
+	{
+		std::cout <<y<<" the alue of y is\n";
+	}
+};
+
+int main()
+{
+	class maa m;
+	m.get();
+}
