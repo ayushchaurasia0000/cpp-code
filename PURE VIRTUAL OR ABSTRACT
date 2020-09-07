@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+class ayush
+{
+public:
+	virtual void show()=0; // this is pure virtual or abstract function
+	void display(void)
+	{
+		std::cout << "this is display function\n";
+	}
+};
+class maa :public ayush
+{
+public:
+	void show(void)
+	{
+		std::cout << "this is show in the\n";
+	}
+};
+
+int main()
+{
+	class ayush *p;
+	class maa m;
+	p=&m;
+	p->display();
+	p->show();
+	return 0;
+  } 
