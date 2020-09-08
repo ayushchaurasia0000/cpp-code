@@ -1,0 +1,15 @@
+#include<fstream>
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+int main()
+{
+    ofstream ayush;
+    ayush.open("maa.dat");
+    getch();
+    cout<<"ayush";
+    getch();
+    ayush.close();
+    return 0;
+}
