@@ -1,0 +1,15 @@
+#include<iostream>
+
+using namespace std;
+
+template<typename papa, class maa>
+papa ayush( papa x, maa y, papa z)
+{
+	std::cout <<x<<endl<<y<<endl<<z<<endl;
+	return z;
+}
+
+int main()
+{
+	std::cout << ayush(6,7.89,4);
+}
