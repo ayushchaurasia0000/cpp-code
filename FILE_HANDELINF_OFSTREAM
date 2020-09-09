@@ -1,0 +1,11 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+of ayush("newfile.txt");
+ayush<<"this is my new file on github";
+ayush.close();
+return 0;
+}
