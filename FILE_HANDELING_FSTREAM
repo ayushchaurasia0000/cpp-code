@@ -1,0 +1,11 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("this.dat",ios::out|ios::app);
+ayush<<"this is me";
+ayush.close();
+}
