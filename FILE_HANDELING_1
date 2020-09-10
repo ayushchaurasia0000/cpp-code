@@ -1,0 +1,14 @@
+#include<iostream>
+#include<fstream>
+#include<cstring>
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("maa_tujha_salam.txt",ios::app);
+char c[40]="ayush chaurasia";
+int length= strlen(c);
+ayush.write(c,length);   //output ayush chaurasia
+ayush.close();
+return 0;
+}
