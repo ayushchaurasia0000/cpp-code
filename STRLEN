@@ -1,0 +1,11 @@
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+int main()
+{
+char c[40]= "ayush chaurasia"; // output - 15 space bhi count hoga
+int length= strlen(c);
+std::cout <<length;
+return 0;
+}
