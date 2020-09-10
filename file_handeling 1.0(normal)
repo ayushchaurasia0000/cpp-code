@@ -1,0 +1,106 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("new.txt",ios::app);
+std::cout <<"maa papa love you"; 
+ayush.close();
+return 0;
+}
+//THIS WILL MAKE NEW FILE IN THE FOLDER
+
+
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("new.txt",ios::app);
+char c;
+int count =0;
+while(!ayush.eof())
+{
+ayush.get(c);
+std::cout <<c;
+}
+ayush.close();
+return 0;
+}
+
+//THIS WILL PRINT THE FILE IN THE TERMINAL
+
+
+
+GETLINE FUNCTION
+
+
+
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("new.txt",ios::app);
+char c[70];
+int count =0;
+while(!ayush.eof())
+{
+ayush.getline(c,70,'p'(jaha se letter start hoga waha yeh rok dega p wala'));
+std::cout <<c;
+}
+std::cout <<count;
+ayush.close();
+return 0;
+}
+
+
+//READ FUNCTION
+
+
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("new.txt",ios::app);
+char c[70];
+int count =0;
+while(!ayush.eof())
+{
+ayush.read(c,70);
+std::cout <<c;
+}
+std::cout <<count;
+ayush.close();
+return 0;
+}
+
+// NORMAL FUNCTION
+
+using namespace std;
+int main()
+{
+fstream ayush;
+ayush.open("new.txt",ios::app);
+char c[70];
+int count =0;
+while(!ayush.eof())
+{
+ayush>>c;
+std::cout <<c;
+}
+std::cout <<count;
+ayush.close();
+return 0;
+}
+
+
