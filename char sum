@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+char c='a';
+int a=c;
+std::cout <<a<<endl;   //output-97 because the number starts from the 96 onwards 
+return 0;
+}
