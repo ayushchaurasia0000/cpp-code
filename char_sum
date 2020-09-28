@@ -1,0 +1,36 @@
+THIS IS CORRECT
+
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    std::string s;
+    std::cin>>s;
+    int count=0;
+    for(int i=0;i<s.length();i++)  
+    {
+         count = int (s[i]) -int('a') + 1 +count;
+    }
+    std::cout <<count;
+    return 0;
+}
+
+
+YEH VSCODE MAI ERROR DE RAHA HAI
+BAKI SB MAI CHAL RAHA HAI
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    std::string s;
+    std::cin>>s;
+    int count=0;
+    for(int i=0;i<s.size();i++)
+    {
+         count += int (s[i]) -96 ;
+    }
+    std::cout <<count;
+    return 0;
+}
