@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+void get(int a)
+{
+    int sh,sm,eh,em;
+    while(a--)
+    {
+        std::cin>>sh>>sm>>eh>>em;
+        int p= abs((60*eh) + em - (60* sh) - sm) ;
+        std::cout <<p/60<<" ";
+        int q = abs ( p - ( 60 * ( p / 60 ) ));
+        std::cout <<q<<endl;  
+    }
+}
+
+int main()
+{
+    int a;
+    std::cin>>a;
+    get(a);
+    return 0;
+}
