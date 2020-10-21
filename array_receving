@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+void fun(int a)
+{
+    std::cout <<a;
+}
+
+int main()
+{
+    int a[4];
+    for(int i=0;i<4;i++)
+        std::cin>>a[i];
+        for(int k=0;k<4;k++)
+        fun(a[k]);
+
+}
